@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_imgView">4dp</dimen>
+    <dimen name="sz_title">30sp</dimen>
+    <dimen name="sz_sub_title">20sp</dimen>
+    <dimen name="sz_text">15sp</dimen>
+
+    <!-- start margins -->
+    <dimen name="sz_mg_two">2sp</dimen>
+    <dimen name="sz_mg_three">3sp</dimen>
+    <dimen name="sz_mg_four">4sp</dimen>
+    <dimen name="sz_mg_five">5sp</dimen>
+    <dimen name="sz_mg_six">6sp</dimen>
+    <dimen name="sz_mg_seven">7sp</dimen>
+    <!-- end margins -->
+
+</resources>

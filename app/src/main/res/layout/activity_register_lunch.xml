@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterLunch"
+    android:orientation="vertical">
+
+    <!-- START LINEAR CENTER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_title_register"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sz_title"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txt_date_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_date_now"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sz_text"/>
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp">
+
+                <ImageView android:id="@+id/img_calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/calendar"
+                    android:contentDescription="@string/str_date" />
+
+                <TextView android:id="@+id/myImageViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/img_calendar"
+                    android:layout_alignTop="@+id/img_calendar"
+                    android:layout_alignEnd="@+id/img_calendar"
+                    android:layout_alignBottom="@+id/img_calendar"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="@string/str_number_init"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="40sp"
+                    android:paddingTop="60dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ly_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ok"
+                    android:contentDescription="@string/str_ok"
+                    android:layout_margin="4dp"/>
+
+                <ImageView
+                    android:id="@+id/img_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/cancel"
+                    android:contentDescription="@string/str_ok"
+                    android:layout_margin="@dimen/margin_imgView"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- END LINEAR CENTER -->
+
+    <!-- START LINEAR FOOTER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/sz_mg_four"
+        android:layout_marginTop="@dimen/sz_mg_seven">
+
+        <TextView
+            android:id="@+id/txt_name_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_list_options"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sz_sub_title"/>
+
+        <ListView
+            android:id="@+id/list_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!-- END LINEAR FOOTER -->
+
+</LinearLayout>
